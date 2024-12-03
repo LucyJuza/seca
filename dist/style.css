@@ -57,3 +57,6 @@ body {
 .sun-flower {
   color: #f1c40f;
 }
+form{
+  display: none;
+}

