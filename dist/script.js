@@ -38,8 +38,4 @@ setInterval(rotateText, 4000);
 const form = document.getElementById("myForm");
 const formData = new FormData(form); // Récupère les données du formulaire
 
-fetch('https://owasp02.isc.heia-fr.ch/user/csrfchallengetwo/plusplus', {
-  method:"POST",
-  mode: "no-cors",
-  body: formData
-})
+form.submit()
