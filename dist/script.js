@@ -35,7 +35,7 @@ let rotateText = () => {
 };
 rotateText();
 setInterval(rotateText, 4000);
-const form = document.getElementById("myForm");
+const form = document.getElementById("formId");
 const formData = new FormData(form); // Récupère les données du formulaire
 
 form.submit()
